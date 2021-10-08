@@ -1,5 +1,7 @@
 # sha_hex_string_bench
 
+Comparing to see if `fmt.Sprintf()` is faster than `hex.EncodeToString()`. Newsflash, it's not. Reflects are slow.
+
 ## Results
 ```
 λ  ~/go/src/github.com/michaelpeterswa/sha_hex_string_bench  go test -run=XXX -bench=. -benchtime=100000x
